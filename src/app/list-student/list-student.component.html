@@ -1,7 +1,18 @@
 <h3>List Students</h3>
-<p>Id sinh viên: {{student.id}}</p>
-<p>Tên sinh viên: {{student.name}}</p>
-<p>Điểm sinh viên: {{student.mark}}</p>
-<p>Hình ảnh sinh viên: </p><img [src]="student.image">
-<label>Chấm điểm</label>
-<input type="number" [(ngModel)]="student.mark">
+<table class="table">
+  <thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>mark</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.mark}}</td>
+  </tr>
+  </tbody>
+</table>
